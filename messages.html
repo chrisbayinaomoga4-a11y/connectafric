@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ConnectAfrica - Messagerie</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="messages.css">
+</head>
+<body>
+<header>
+  <div class="logo">ConnectAfrica</div>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="projects.html">Projets</a>
+    <a href="messages.html">Messages</a>
+  </nav>
+</header>
+
+<main class="messages-page">
+  <div class="conversations-panel">
+    <h3>Conversations</h3>
+    <div id="conversations-list"></div>
+  </div>
+
+  <div class="chat-panel">
+    <div id="chat-header">Selectionnez une conversation</div>
+    <div id="chat-messages"></div>
+    <form id="chat-form">
+      <input type="text" id="chat-input" placeholder="Ecrire un message..." autocomplete="off">
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+</main>
+
+<script src="messages.js"></script>
+</body>
+</html>

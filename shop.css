@@ -1,0 +1,105 @@
+.shop-page {
+  padding: 60px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.shop-page h2 {
+  text-align: center;
+  color: #0b3d2e;
+  margin-bottom: 8px;
+}
+
+.shop-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.shop-filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #12a150, #ffcc29);
+  color: #0b3d2e;
+  border: none;
+  font-weight: bold;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.app-card {
+  background: white;
+  border: 1px solid #eaeaea;
+  border-radius: 14px;
+  padding: 22px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.app-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.app-name {
+  font-weight: bold;
+  color: #0b3d2e;
+  margin-bottom: 6px;
+  font-size: 17px;
+}
+
+.app-author {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.app-price {
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.app-price.free {
+  color: #12a150;
+}
+
+.app-price.paid {
+  color: #b88900;
+}
+
+.app-btn {
+  display: block;
+  margin-top: 14px;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #12a150, #0b3d2e);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ConnectAfrica - Formations</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="learn.css">
+</head>
+<body>
+<header>
+  <div class="logo">ConnectAfrica</div>
+  <nav>
+    <a href="index.html" class="btn-signup">Accueil</a>
+    <a href="projects.html" class="btn-signup">Projets</a>
+    <a href="messages.html" class="btn-signup">Messages</a>
+    <a href="badges.html" class="btn-signup">Badges</a>
+    <a href="map.html" class="btn-signup">Carte</a>
+    <a href="learn.html" class="btn-signup">Formations</a>
+    
+  </nav>
+</header>
+
+<main class="learn-page">
+  <h2>Apprendre avec la communaute</h2>
+  <p class="learn-subtitle">Des tutoriels et mini-cours crees par les membres</p>
+
+  <div class="learn-filters">
+    <input type="text" id="search-tuto" placeholder="Rechercher un tutoriel...">
+    <button id="btn-new-tuto">Partager un tutoriel</button>
+  </div>
+
+  <div class="tuto-grid" id="tuto-grid"></div>
+</main>
+
+<div id="new-tuto-modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close" id="close-new-tuto">&times;</span>
+    <h2>Nouveau tutoriel</h2>
+    <form id="new-tuto-form">
+      <label for="t-title">Titre</label>
+      <input type="text" id="t-title" required>
+
+      <label for="t-author">Votre nom</label>
+      <input type="text" id="t-author" required>
+
+      <label for="t-desc">Description</label>
+      <input type="text" id="t-desc" required>
+
+      <label for="t-category">Categorie</label>
+      <select id="t-category">
+        <option value="Developpement">Developpement</option>
+        <option value="Design">Design</option>
+        <option value="Musique">Musique</option>
+        <option value="Langues">Langues</option>
+        <option value="Entrepreneuriat">Entrepreneuriat</option>
+      </select>
+
+      <button type="submit">Publier</button>
+    </form>
+  </div>
+</div>
+
+<script src="learn.js"></script>
+</body>
+</html>

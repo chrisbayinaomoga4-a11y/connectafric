@@ -1,0 +1,99 @@
+.badges-page {
+  padding: 60px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.badges-page h2 {
+  text-align: center;
+  color: #0b3d2e;
+  margin-bottom: 40px;
+}
+
+.level-card {
+  background: linear-gradient(135deg, #eafff2, #fffef0);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.level-label {
+  font-size: 14px;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.level-value {
+  font-size: 48px;
+  font-weight: bold;
+  color: #12a150;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  background: #ffffff;
+  border-radius: 20px;
+  height: 14px;
+  overflow: hidden;
+  margin: 16px auto;
+  max-width: 400px;
+}
+
+.progress-fill {
+  background: linear-gradient(135deg, #12a150, #ffcc29);
+  height: 100%;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+.points-label {
+  color: #555;
+  font-size: 14px;
+}
+
+.badges-page h3 {
+  color: #0b3d2e;
+  margin-bottom: 24px;
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.badge-card {
+  background: white;
+  border: 1px solid #eaeaea;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.badge-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.badge-card.locked {
+  opacity: 0.4;
+}
+
+.badge-icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.badge-name {
+  font-weight: bold;
+  color: #0b3d2e;
+  margin-bottom: 6px;
+}
+
+.badge-desc {
+  font-size: 13px;
+  color: #666;
+}

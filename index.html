@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ConnectAfrica - Plateforme collaborative</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">ConnectAfrica</div>
+  <nav>
+    <a href="learn.html"class="btn-signup">Accueil</a>
+    <a href="projects.html">Projets</a>
+    <a href="#a-propos">A propos</a>
+    <button id="btn-login">Connexion</button>
+    <a href="connect.html" class="btn-signup">Inscription</a>
+  </nav>
+</header>
+
+<main>
+  <section id="accueil" class="hero">
+    <h1>Connectez-vous, collaborez, creez, sans frontieres</h1>
+    <p>Une plateforme pour que les jeunes du Congo et d'ailleurs se rencontrent, echangent leurs competences et construisent des projets ensemble.</p>
+    <button id="btn-start">Rejoindre la communaute</button>
+  </section>
+
+  <section id="projets" class="projects">
+    <h2>Projets recents</h2>
+    <div id="projects-list" class="projects-grid">
+      <!-- Les projets seront charges ici dynamiquement -->
+    </div>
+  </section>
+</main>
+
+<div id="signup-modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close" id="close-signup">&times;</span>
+    <h2>Creer un compte</h2>
+    <form id="signup-form">
+      <label for="username">Nom d'utilisateur</label>
+      <input type="text" id="username" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" required>
+
+      <label for="country">Pays</label>
+      <select id="country" required>
+        <option value="">Choisissez votre pays</option>
+        <option value="CG">Congo</option>
+        <option value="CD">Republique Democratique du Congo</option>
+        <option value="FR">France</option>
+        <option value="BE">Belgique</option>
+        <option value="CI">Cote d'Ivoire</option>
+        <option value="SN">Senegal</option>
+        <option value="CM">Cameroun</option>
+        <option value="autre">Autre</option>
+      </select>
+
+      <label for="skills">Vos competences</label>
+      <input type="text" id="skills" placeholder="Ex: developpement web, design, musique">
+
+      <button type="submit">Creer mon compte</button>
+    </form>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

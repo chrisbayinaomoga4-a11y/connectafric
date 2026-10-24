@@ -1,0 +1,87 @@
+.learn-page {
+  padding: 60px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.learn-page h2 {
+  text-align: center;
+  color: #0b3d2e;
+  margin-bottom: 8px;
+}
+
+.learn-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.learn-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.learn-filters input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.learn-filters button {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #12a150, #ffcc29);
+  color: #0b3d2e;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tuto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.tuto-card {
+  background: white;
+  border: 1px solid #eaeaea;
+  border-radius: 14px;
+  padding: 22px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tuto-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.tuto-category {
+  display: inline-block;
+  background: #eafff2;
+  color: #12a150;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tuto-title {
+  font-weight: bold;
+  color: #0b3d2e;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.tuto-author {
+  font-size: 13px;
+  color: #888;
+  margin-top: 10px;
+}
